@@ -5,6 +5,8 @@
 al menos 5 nombres de tus compañeros. Muestra 
 cada nombre usando un ciclo.'''
 
+print("Ejercicio 1: Vector de Nombres") 
+
 nombres =  ["Santiago", "Luis", "Daniel", "David", "Sergio"] # Vector de nombres
 print("Lista de compañeros:")  # Print para imprimir el encabezado
 for nombre in nombres: # Itera sobre cada nombre en el vector y lo imprime
@@ -15,6 +17,8 @@ o	a) La nota mayor
 o	b) La nota menor
 o	c) El promedio de notas
 '''
+
+print("\nEjercicio 2: Notas")
 
 notas = [] # Vector para almacenar las notas ingresadas por el usuario
 print("--- Ingreso de Notas ---") # Solicita al usuario que ingrese las notas
@@ -34,6 +38,7 @@ print(f"c) El promedio de notas es: {promedio:.2f}") # Imprime el promedio de no
 
 '''3.	Crea un vector de 10 números enteros. 
 Cambia el valor del quinto elemento por 99 y muestra el vector actualizado.'''
+print("\nEjercicio 3: Vector de Números Enteros")
 
 dieznumeros = [25, 31, 3, 41, 15, 65, 71, 87, 19, 10] # Vector de 10 números enteros
 print("Vector original:", dieznumeros) # Imprime el vector original
@@ -43,6 +48,7 @@ print("Vector actualizado:", dieznumeros) #imprime el vector actualizado con el 
 
 '''4.	Haz un programa donde el usuario ingrese 5 edades. 
 Luego, imprime solo las edades mayores o iguales a 18 años.'''
+print("\nEjercicio 4: Edades")
 
 edades = [] # Vector para almacenar las edades ingresadas por el usuario
 print("--- Ingreso de Edades ---") 
@@ -57,6 +63,7 @@ for edad in edades: # Itera sobre cada edad en el vector de edades
 
 """5.	Modifica el vector de nombres del ejercicio 
 1 eliminando el tercer nombre y muestra el vector resultante."""
+print("\nEjercicio 5: Modificación del Vector de Nombres")
 
 nombres =  ["Santiago", "Luis", "Daniel", "David", "Sergio"] 
 print("Vector original:", nombres) # Imprime el vector original de nombres
