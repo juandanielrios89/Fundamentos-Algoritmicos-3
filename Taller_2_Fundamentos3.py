@@ -1,8 +1,13 @@
 vector =  []
 for i in range(15):
-    valor = int(input(f"ingresa el valor {i+1}: "))
-    vector.append(valor)    
-
+   while True:
+        try: 
+            valor = int(input(f"ingresa el valor {i+1}: "))
+            vector.append(valor)    
+            break
+        except ValueError:
+            print("Error: Por favor, ingrese un número entero válido.")
+            
 print("Vector original:", vector)
 
 valor_mayor = max(vector)
