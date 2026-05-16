@@ -7,7 +7,7 @@ for i in range(15):
             break
         except ValueError:
             print("Error: Por favor, ingrese un número entero válido.")
-            
+
 print("Vector original:", vector)
 
 valor_mayor = max(vector)
@@ -25,12 +25,15 @@ print("\n--- Modificación del Vector ---")
 modificar_posicion = int(input("Ingrese la posición del valor a modificar (1-15): "))
 nuevo_valor = int(input("Ingrese el nuevo valor: "))
 
-#if 1 <= modificar_posicion <= 15:
- #   vector[modificar_posicion - 1] = nuevo_valor
-  #  print("Vector actualizado:", vector)
-
-indice_real = modificar_posicion - 1
-vector[indice_real] = nuevo_valor
+if 1 <= modificar_posicion <= (len(vector)):
+    while True:
+        try:        
+            vector[modificar_posicion - 1] = nuevo_valor
+            print("Vector actualizado:", vector)
+            break
+        except ValueError:
+            print("Error: Por favor, ingrese un número entero válido.")
+else:   print("Error: La posición ingresada no es válida. Por favor, ingrese un número entre 1 y 15.")
 
 # Muestra el vector actualizado
 print("\n--- Base de datos actualizada ---")
