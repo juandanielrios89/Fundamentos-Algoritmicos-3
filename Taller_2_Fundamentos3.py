@@ -1,0 +1,32 @@
+vector =  []
+for i in range(15):
+    valor = int(input(f"ingresa el valor {i+1}: "))
+    vector.append(valor)    
+
+print("Vector original:", vector)
+
+valor_mayor = max(vector)
+valor_menor = min(vector)
+posicion_mayor = vector.index(valor_mayor)
+posicion_menor = vector.index(valor_menor)
+
+print(f"El valor mayor es: {valor_mayor} y se encuentra en la posición: {posicion_mayor}")
+print(f"El valor menor es: {valor_menor} y se encuentra en la posición: {posicion_menor}")
+
+promedio = sum(vector) / len(vector)
+print(f"El promedio de los valores es: {promedio:.2f}")
+
+print("\n--- Modificación del Vector ---")
+modificar_posicion = int(input("Ingrese la posición del valor a modificar (1-15): "))
+nuevo_valor = int(input("Ingrese el nuevo valor: "))
+
+#if 1 <= modificar_posicion <= 15:
+ #   vector[modificar_posicion - 1] = nuevo_valor
+  #  print("Vector actualizado:", vector)
+
+indice_real = modificar_posicion - 1
+vector[indice_real] = nuevo_valor
+
+# Muestra el vector actualizado
+print("\n--- Base de datos actualizada ---")
+print(f"Vector actualizado: {vector}")
