@@ -24,5 +24,5 @@ for i, fila in enumerate(matriz_notas):
     print(f"Estudiante {i+1}: Notas = {fila}, | Promedio = {promedio:.2f}")
 
 mejor = max(promedios)
-index = promedios.index(mejor)
-print(f"\nEl estudiante con el mejor promedio es el Estudiante {index+1} con un promedio de {mejor:.2f}")
+posicion = promedios.index(mejor)
+print(f"\nEl estudiante con el mejor promedio es el Estudiante {posicion+1} con un promedio de {mejor:.2f}")
